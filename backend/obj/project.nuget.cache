@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+b/8AbhWgHu5ZEvztnk+KtutV65ECrF6tW6ROjLSlitbAy2khbTYtQVt0V/xBRcCOWApG0vgWjeN2/g4Ox+Snw==",
+  "dgSpecHash": "7nJ51jC6MGJV1k1L1sGJ01CcogT0NyPk+hDxgujbdZ+la6tLyq1Bvwyio9B5JD3UmEzSwvm3RibPsX917XKauQ==",
   "success": true,
-  "projectFilePath": "/home/aldair-martinez/Documentos/esperanza/backend/backend.csproj",
+  "projectFilePath": "/home/aldair-martinez/Documentos/GitHub/esperanza/backend/backend.csproj",
   "expectedPackageFiles": [
     "/home/aldair-martinez/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/aldair-martinez/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

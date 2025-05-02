@@ -7241,11 +7241,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/aldair-martinez/Documentos/esperanza/backend/backend.csproj",
+      "projectUniqueName": "/home/aldair-martinez/Documentos/GitHub/esperanza/backend/backend.csproj",
       "projectName": "backend",
-      "projectPath": "/home/aldair-martinez/Documentos/esperanza/backend/backend.csproj",
+      "projectPath": "/home/aldair-martinez/Documentos/GitHub/esperanza/backend/backend.csproj",
       "packagesPath": "/home/aldair-martinez/.nuget/packages/",
-      "outputPath": "/home/aldair-martinez/Documentos/esperanza/backend/obj/",
+      "outputPath": "/home/aldair-martinez/Documentos/GitHub/esperanza/backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/aldair-martinez/.nuget/NuGet/NuGet.Config"
