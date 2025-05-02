@@ -1,0 +1,43 @@
+<div class="container">
+  <h2>{{ translationService.t('userListTitle') }}</h2>
+  
+  <div class="search-bar">
+    <input type="text" [placeholder]="translationService.t('searchPlaceholder')" [(ngModel)]="searchTerm">
+  </div>
+
+  <a routerLink="/users/add" class="btn primary">{{ translationService.t('addUser') }}</a>
+
+  <table>
+    <thead>
+      <tr>
+        <th>{{ translationService.t('id') }}</th>
+        <th>{{ translationService.t('firstName') }}</th>
+        <th>{{ translationService.t('lastName') }}</th>
+        <th>{{ translationService.t('email') }}</th>
+        <th>{{ translationService.t('telephone') }}</th>
+        <th>{{ translationService.t('createdAt') }}</th>
+        <th>{{ translationService.t('updatedAt') }}</th>
+        <th>{{ translationService.t('actions') }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of filteredUsers()">
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.telephoneNumber || '—' }}</td>
+        <td>{{ user.createdAt | date: 'short' }}</td>
+        <td>{{ user.updatedAt | date: 'short' }}</td>
+        <td>
+          <a [routerLink]="['/users/edit', user.id]" class="btn info" [queryParams]="{ isEditMode: true }">
+            {{ translationService.t('edit') }}
+          </a>
+          <button (click)="deleteUser(user.id)" class="btn danger">
+            {{ translationService.t('delete') }}
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

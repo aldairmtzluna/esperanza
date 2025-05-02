@@ -1,0 +1,17 @@
+{
+    "userListTitle": "Lista de Usuarios",
+    "searchPlaceholder": "Buscar por nombre o correo...",
+    "addUser": "Agregar Nuevo Usuario",
+    "id": "ID",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo Electrónico",
+    "telephone": "Teléfono",
+    "createdAt": "Creado",
+    "updatedAt": "Actualizado",
+    "actions": "Acciones",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "deleteConfirm": "¿Estás seguro de que deseas eliminar este usuario?"
+  }
+  

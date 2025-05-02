@@ -1,0 +1,40 @@
+<div class="container">
+  <h2>{{ isEditMode ? 'Edit User' : 'Add New User' }}</h2>
+
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" formControlName="firstName">
+      <div *ngIf="userForm.get('firstName')?.invalid && userForm.get('firstName')?.touched" class="error">
+        First name is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" formControlName="lastName">
+      <div *ngIf="userForm.get('lastName')?.invalid && userForm.get('lastName')?.touched" class="error">
+        Last name is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" formControlName="email">
+      <div *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched" class="error">
+        Valid email is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="telephoneNumber">Telephone</label>
+      <input type="tel" id="telephoneNumber" formControlName="telephoneNumber">
+      <div *ngIf="userForm.get('telephoneNumber')?.invalid && userForm.get('telephoneNumber')?.touched" class="error">
+        Telephone must be a valid number
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="userForm.invalid" class="btn primary">{{ isEditMode ? 'Update' : 'Save' }}</button>
+    <a routerLink="/users" class="btn secondary">Cancel</a>
+  </form>
+</div>
