@@ -12,8 +12,8 @@ using backend.Data;
 namespace backend.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20250501181238_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250501181238_CreateUsersTable")]
+    partial class CreateUsersTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
